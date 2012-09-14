@@ -10,7 +10,7 @@
 
 	<groupId>com.sksamuel.gwt</groupId>
 	<artifactId>gwt-websockets</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>gwt-websockets</name>
 	<description>GWT Wrapper for browser Websockets</description>
@@ -33,9 +33,16 @@
 	<distributionManagement>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>github.sksamuel.repo</id>
-			<url>file://C:/development/workspace/repo/repo</url>
+			<id>othermedia.nexus.releases</id>
+			<name>Other Media Nexus Releases</name>
+			<url>http://build.otherworks.com/nexus/content/repositories/releases/</url>
 		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>othermedia.nexus.snapshots</id>
+			<name>Other Media Nexus Snapshots</name>
+			<url>http://build.otherworks.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<developers>
