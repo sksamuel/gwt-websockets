@@ -30,25 +30,10 @@
 		<url>it@github.com:sksamuel/gwt-websockets.git</url>
 	</scm>
 
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>othermedia.nexus.releases</id>
-			<name>Other Media Nexus Releases</name>
-			<url>http://build.otherworks.com/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<uniqueVersion>true</uniqueVersion>
-			<id>othermedia.nexus.snapshots</id>
-			<name>Other Media Nexus Snapshots</name>
-			<url>http://build.otherworks.com/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<developers>
 		<developer>
 			<name>Stephen Samuel</name>
-			<email>samspade79@gmail.com</email>
+			<email>sam@sksamuel.com</email>
 			<timezone>GMT</timezone>
 		</developer>
 	</developers>
