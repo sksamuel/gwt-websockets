@@ -10,7 +10,7 @@ To use add this dependancy to your project (hosted on maven central):
     <dependency>
         <groupId>com.sksamuel.gwt</groupId>
         <artifactId>gwt-websockets</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 
 Then update your .gwt.xml files to include this:
@@ -60,3 +60,9 @@ Finally, you can get the status of the socket using the method `socket.getState(
 
 Have fun.
 
+Binary support
+===============
+
+Version 1.0.1 adds support for byte methods for sending and receiving. To send, simply use send(byte[]) method on Websocket. To receive, you must implement BinaryWebsocketListener instead of WebsocketListener and then you have a new callback method onMessage(byte[]).
+
+Because binary support on websockets isn't yet supported on all browsers, this modules sends binary data using base64.
