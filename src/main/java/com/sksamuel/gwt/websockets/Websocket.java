@@ -15,8 +15,6 @@
  */
 package com.sksamuel.gwt.websockets;
 
-import com.google.gwt.user.server.Base64Utils;
-
 import java.util.HashSet;
 import java.util.Set;
 
