@@ -25,4 +25,6 @@ public interface WebsocketListener {
     void onMessage(String msg);
 
     void onOpen();
+
+    void onError();
 }
