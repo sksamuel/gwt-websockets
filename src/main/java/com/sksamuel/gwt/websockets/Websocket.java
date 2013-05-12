@@ -81,8 +81,11 @@ public class Websocket {
     }
 
     protected void onError() {
-        for (WebsocketListener listener : listeners)
-            listener.onError();
+        for (WebsocketListener listener : listeners) {
+        	if (listener instanceof WebsocketListenerExt) {
+        		((WebsocketListenerExt)listener).onError();
+        	}
+        }
     }
 
     protected void onMessage(String msg) {
