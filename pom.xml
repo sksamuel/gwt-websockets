@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<groupId>de.dicos.common</groupId>
+		<artifactId>dicos-pom</artifactId>
+		<version>1.1</version>
 	</parent>
 
 	<groupId>com.sksamuel.gwt</groupId>
 	<artifactId>gwt-websockets</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.3-dcs-1</version>
 
 	<name>gwt-websockets</name>
 	<description>GWT Wrapper for browser Websockets</description>

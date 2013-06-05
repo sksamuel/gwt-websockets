@@ -51,6 +51,7 @@ public class Websocket {
                                                 $wnd.s = new WebSocket(url);
 												$wnd.s.onopen = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onOpen()(); };
 												$wnd.s.onclose = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onClose()(); };
+												$wnd.s.onerror = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onError()(); };
 												$wnd.s.onmessage = function(msg) { ws.@com.sksamuel.gwt.websockets.Websocket::onMessage(Ljava/lang/String;)(msg.data); }
 												}-*/;
 
@@ -77,6 +78,14 @@ public class Websocket {
     protected void onClose() {
         for (WebsocketListener listener : listeners)
             listener.onClose();
+    }
+
+    protected void onError() {
+        for (WebsocketListener listener : listeners) {
+        	if (listener instanceof WebsocketListenerExt) {
+        		((WebsocketListenerExt)listener).onError();
+        	}
+        }
     }
 
     protected void onMessage(String msg) {
