@@ -44,23 +44,23 @@ public class Websocket {
     }
 
     public native void _close(String s) /*-{
-                                $wnd.s.close();
+                                $wnd[s].close();
 								}-*/;
 
     private native void _open(Websocket ws, String s, String url) /*-{
-                                                $wnd.s = new WebSocket(url);
-												$wnd.s.onopen = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onOpen()(); };
-												$wnd.s.onclose = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onClose()(); };
-												$wnd.s.onerror = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onError()(); };
-												$wnd.s.onmessage = function(msg) { ws.@com.sksamuel.gwt.websockets.Websocket::onMessage(Ljava/lang/String;)(msg.data); }
+                                                $wnd[s] = new WebSocket(url);
+												$wnd[s].onopen = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onOpen()(); };
+												$wnd[s].onclose = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onClose()(); };
+												$wnd[s].onerror = function() { ws.@com.sksamuel.gwt.websockets.Websocket::onError()(); };
+												$wnd[s].onmessage = function(msg) { ws.@com.sksamuel.gwt.websockets.Websocket::onMessage(Ljava/lang/String;)(msg.data); }
 												}-*/;
 
     public native void _send(String s, String msg) /*-{
-                                        $wnd.s.send(msg);
+                                        $wnd[s].send(msg);
 										}-*/;
 
     private native int _state(String s) /*-{
-                                return $wnd.s.readyState;
+                                return $wnd[s].readyState;
 								}-*/;
 
     public void addListener(WebsocketListener listener) {
