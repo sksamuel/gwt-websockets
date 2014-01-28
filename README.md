@@ -10,7 +10,7 @@ To use add this dependancy to your project (hosted on maven central):
     <dependency>
         <groupId>com.sksamuel.gwt</groupId>
         <artifactId>gwt-websockets</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </dependency>
 
 Then update your .gwt.xml files to include this:
