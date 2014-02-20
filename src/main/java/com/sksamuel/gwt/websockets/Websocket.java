@@ -19,7 +19,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author Stephen K Samuel samspade79@gmail.com 14 Sep 2012 08:58:55
+ * @author Stephen K Samuel 14 Sep 2012 08:58:55
  */
 public class Websocket {
 

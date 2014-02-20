@@ -56,7 +56,8 @@ Sometimes you might want to check if websockets are available on your target sys
 
 You can create as many websockets as you want on a single page. The library takes care of assigning each one to a different javascript global.
 
-Finally, you can get the status of the socket using the method `socket.getState()` which returns an integer for the current state of the socket, where `CONNECTING = 0, OPEN = 1, CLOSED = 2`.
+Finally, you can get the status of the socket using the method `socket.getState()` which returns an integer for the
+current state of the socket, where `CONNECTING = 0, OPEN = 1, CLOSING = 2, CLOSED = 3`.
 
 Have fun.
 

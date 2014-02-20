@@ -16,7 +16,7 @@
 package com.sksamuel.gwt.websockets;
 
 /**
- * @author Stephen K Samuel samspade79@gmail.com 14 Sep 2012 08:58:10
+ * @author Stephen K Samuel 14 Sep 2012 08:58:10
  */
 public interface WebsocketListener {
 
