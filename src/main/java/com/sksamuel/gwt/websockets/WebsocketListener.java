@@ -20,7 +20,7 @@ package com.sksamuel.gwt.websockets;
  */
 public interface WebsocketListener {
 
-    void onClose();
+    void onClose(CloseEvent event);
 
     void onMessage(String msg);
 
