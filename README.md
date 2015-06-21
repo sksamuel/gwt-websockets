@@ -29,7 +29,7 @@ Then attach one or more listeners which are used for the callbacks:
     socket.addListener(new WebsocketListener() {
 
         @Override
-        public void onClose() {
+        public void onClose(CloseEvent event) {
     	    // do something on close
         }
 
