@@ -66,6 +66,9 @@ public class Websocket {
     public void addListener(WebsocketListener listener) {
         listeners.add(listener);
     }
+    public void removeListener(WebsocketListener listener) {
+        listeners.remove(listener);
+    }
 
     public void close() {
         _close(varName);
